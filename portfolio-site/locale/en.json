@@ -1,0 +1,21 @@
+{
+    "Navbar": {
+        "name": "paulina almada",
+        "work": "work",
+        "about": "about",
+        "contact": "contact",
+        "language": "change language"
+    },
+    "Home": {
+        "home": "home"
+    },
+    "About": {
+        "about": "about"
+    },
+    "Work": {
+        "work": "work"
+    },
+    "Contact": {
+        "contact": "contact"
+    }
+}
