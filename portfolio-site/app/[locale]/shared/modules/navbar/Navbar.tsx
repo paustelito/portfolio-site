@@ -6,7 +6,7 @@ import LanguageChanger from "./languageChanger/LanguageChanger";
 const Navbar: FC = () => {
     const t = useTranslations('Navbar');
 
-    const textStyle = 'text-gray hover:text-secondary text-[18px]';
+    const textStyle = 'font-heading text-gray hover:text-secondary text-[18px]';
 
     return (
         <div className="z-50 w-full grid grid-cols-3 justify-between">

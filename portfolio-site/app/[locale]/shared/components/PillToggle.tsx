@@ -35,7 +35,7 @@ const PillToggle = <T extends string>({
                         role="tab"
                         aria-selected={selected}
                         onClick={() => onChange(option.value)}
-                        className={`flex items-center rounded-md font-display transition-colors px-3 ${textClassName} ${
+                        className={`flex items-center rounded-md font-heading transition-colors px-3 ${textClassName} ${
                             selected ? 'bg-primary text-black' : 'text-gray hover:text-secondary/[0.6]'
                         }`}
                     >

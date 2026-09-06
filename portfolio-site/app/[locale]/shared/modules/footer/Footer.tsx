@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 const Footer = () => {
     const t = useTranslations('Footer');
 
-    const textStyle = 'text-gray text-[15px]';
+    const textStyle = 'font-heading text-gray text-[15px]';
 
     return (
         <div className="z-50 w-full grid grid-cols-2 justify-between">
