@@ -24,7 +24,7 @@ const PillToggle = <T extends string>({
         <div
             role="tablist"
             aria-label={label}
-            className={`flex items-center rounded-full border border-primary bg-black ${className}`}
+            className={`flex items-center rounded-md border border-primary bg-black ${className}`}
         >
             {options.map((option) => {
                 const selected = option.value === value;
@@ -35,7 +35,7 @@ const PillToggle = <T extends string>({
                         role="tab"
                         aria-selected={selected}
                         onClick={() => onChange(option.value)}
-                        className={`flex items-center rounded-full font-display transition-colors px-3 ${textClassName} ${
+                        className={`flex items-center rounded-md font-display transition-colors px-3 ${textClassName} ${
                             selected ? 'bg-primary text-black' : 'text-gray hover:text-secondary/[0.6]'
                         }`}
                     >

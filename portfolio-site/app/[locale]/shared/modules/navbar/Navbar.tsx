@@ -9,7 +9,7 @@ const Navbar: FC = () => {
     const textStyle = 'text-gray hover:text-secondary text-[18px]';
 
     return (
-        <div className="z-50 w-full grid grid-cols-3 justify-between" style={{ top: 'calc(var(--banner-height, 0px) + 1.5rem)' }}>
+        <div className="z-50 w-full grid grid-cols-3 justify-between">
             {/* Go back to home */}
             <Link href='/'>
                 <span className={`${textStyle}`}>{t('name')}</span>

@@ -17,5 +17,9 @@
     },
     "Contact": {
         "contact": "contact"
+    },
+    "Footer": {
+        "email": "email",
+        "subject": "Reaching out from your portfolio"
     }
 }

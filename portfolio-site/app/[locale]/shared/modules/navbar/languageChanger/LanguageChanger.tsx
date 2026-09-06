@@ -1,6 +1,6 @@
 import { switchLocale } from "./SwitchLocale";
 import { useLocale, useTranslations } from "next-intl";
-import PillToggle from '../../components/PillToggle';
+import PillToggle from '../../../components/PillToggle';
 
 const LanguageChanger = () => {
     const locale = useLocale();

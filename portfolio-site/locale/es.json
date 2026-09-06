@@ -17,5 +17,9 @@
     },
     "Contact": {
         "contact": "contacto"
+    },
+    "Footer": {
+        "email": "correo",
+        "subject": "Saludos desde tu portafolio"
     }
 }
