@@ -1,13 +1,23 @@
 {
     "Navbar": {
         "name": "paulina almada",
+        "home": "home",
         "work": "work",
         "about": "about",
         "contact": "contact",
         "language": "change language"
     },
     "Home": {
-        "home": "home"
+        "hero": {
+            "fullstack": "fullstack developer | fintech + business operations",
+            "building": "building thoughtful, precise,",
+            "human-first": "human-first",
+            "software": " software",
+            "interest": "i work across the stack, with a particular interest in frontend architecture, ui system development, and creating polished, responsive user experiences.",
+            "design": "i design and develop software where clarity, reliability, and trust matter.",
+            "about": "about me",
+            "work": "view my work"
+        }
     },
     "About": {
         "about": "about"

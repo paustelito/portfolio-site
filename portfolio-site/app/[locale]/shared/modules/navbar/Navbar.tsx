@@ -2,9 +2,12 @@ import Link from "next/link";
 import { FC } from "react";
 import { useTranslations } from 'next-intl';
 import LanguageChanger from "./languageChanger/LanguageChanger";
+import { usePathname } from "next/navigation";
 
 const Navbar: FC = () => {
     const t = useTranslations('Navbar');
+    const path = usePathname();
+    const current = path.replace(/^\/(es|en)(?=\/)/, '');
 
     const textStyle = 'font-heading text-gray hover:text-secondary text-[18px]';
 
@@ -18,13 +21,13 @@ const Navbar: FC = () => {
             {/* Navigation links */}
             <div className='flex gap-x-20 justify-center'>
                 <Link href='/about'>
-                    <span className={`${textStyle}`}>{t('about')}</span>
+                    <span className={`${textStyle} ${current === '/about' ? 'text-primary' : '' }`}>{t('about')}</span>
                 </Link>
                 <Link href='/work'>
-                    <span className={`${textStyle}`}>{t('work')}</span>
+                    <span className={`${textStyle} ${current === '/work' ? 'text-primary' : '' }`}>{t('work')}</span>
                 </Link>
                 <Link href='/contact'>
-                    <span className={`${textStyle}`}>{t('contact')}</span>
+                    <span className={`${textStyle} ${current === '/contact' ? 'text-primary' : '' }`}>{t('contact')}</span>
                 </Link>
             </div>
 

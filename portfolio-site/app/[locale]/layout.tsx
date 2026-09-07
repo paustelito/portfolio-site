@@ -17,7 +17,7 @@ const josefin = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Paulina Almada | Fullstack + UX",
+  title: "Paulina Almada | Fullstack Dev",
   description: "Portfolio site for Paulina Almada",
   alternates: {
     canonical: "/",

@@ -6,9 +6,9 @@ import Navbar from './shared/modules/navbar/Navbar';
 export default function PageFrame({ children }: { children: React.ReactNode }) {
     return (
         <>
-            <div className={`w-full min-h-screen flex flex-col p-10 bg-black text-white`}>
+            <div className={`w-full min-h-screen flex flex-col py-10 px-16 bg-black text-white`}>
                 <Navbar />
-                <div className='flex-1 py-5'>
+                <div className='flex-1 pt-12 pb-5'>
                     {children}
                 </div>
                 <Footer />
