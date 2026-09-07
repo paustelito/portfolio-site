@@ -17,6 +17,15 @@
             "design": "i design and develop software where clarity, reliability, and trust matter.",
             "about": "about me",
             "work": "view my work"
+        },
+        "featured": {
+            "projects": "featured projects",
+            "novik": "novik by akton redesign",
+            "novik-desc": "led the redesign of novik, a financial saas, to align with the company's rebrand.",
+            "figma": "figma",
+            "react": "react",
+            "storybook": "storybook",
+            "view": "view project →"
         }
     },
     "About": {

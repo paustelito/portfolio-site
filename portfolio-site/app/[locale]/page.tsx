@@ -1,11 +1,12 @@
 import { useTranslations } from "next-intl";
 import Hero from './shared/modules/hero/Hero';
+import FeaturedProjects from "./shared/modules/featuredProjects/FeaturedProjects";
 
 export default function Home() {
   const t = useTranslations('Home.hero');
 
   return (
-    <div className="flex">
+    <div className="grid grid-cols-2 gap-32">
       <Hero
         eyebrow={t('fullstack')}
         title={<> {t('building')} <span className='text-secondary'>{t('human-first')}</span>{t('software')} </>}
@@ -23,6 +24,9 @@ export default function Home() {
           }
         ]}
       />
+      <div>
+        <FeaturedProjects />
+      </div>
     </div>
   );
 }

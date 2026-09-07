@@ -12,6 +12,8 @@
   --color-secondary: #4DDAA6;
   --color-accent: #7AF7AB;
   --color-gray: #7A8C88;
+  --color-dark-gray: #0A0F0D;
+  --color-dark-gray-hover: #101815;
 }
 
 @theme inline {

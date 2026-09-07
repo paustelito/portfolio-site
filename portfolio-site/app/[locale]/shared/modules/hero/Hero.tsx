@@ -20,13 +20,13 @@ const Hero = ({
     title,
     body,
     buttons,
-    className = '',
+    className,
     textClassName,
 }: HeroProps) => {
     const renderedButtons = buttons.map(({ text, link, variant = 'solid', className = '' }) => {
         const variantStyles = {
             solid: { className: `bg-primary text-black hover:bg-secondary` },
-            outline: { className: `border border-primary bg-transparent text-gray transition-all duration-200 hover:text-white/70 hover:border-secondary` },
+            outline: { className: `border border-primary bg-transparent text-gray transition-all duration-200 hover:text-white/70 hover:border-secondary hover:bg-dark-gray-hover` },
         }[variant];
 
         const base = (
@@ -43,8 +43,8 @@ const Hero = ({
         <div className='flex flex-col gap-2'>
             <span className='text-primary text-[16px] tracking-[1.2]'>{eyebrow}</span>
             <span className='font-heading text-[32px]'>{title}</span>
-            <div className='text-gray text-[18px] mt-3'>{body}</div>
-            <div className="flex gap-6 mt-10">
+            <div className='text-gray text-[18px]'>{body}</div>
+            <div className="flex gap-6 mt-16">
                 {renderedButtons}
             </div>
         </div>

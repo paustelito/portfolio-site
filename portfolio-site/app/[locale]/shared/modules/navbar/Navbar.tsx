@@ -20,6 +20,9 @@ const Navbar: FC = () => {
 
             {/* Navigation links */}
             <div className='flex gap-x-20 justify-center'>
+                <Link href='/'>
+                    <span className={`${textStyle} ${current === '/en' ? 'text-primary' : '' }`}>{t('home')}</span>
+                </Link>
                 <Link href='/about'>
                     <span className={`${textStyle} ${current === '/about' ? 'text-primary' : '' }`}>{t('about')}</span>
                 </Link>
